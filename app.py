@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
    print("Render")
-   return render_template("index.html")
+   return render_template("templates/index.html")
 
 @app.route("/sum",methods=["GET"])
 def sum():
@@ -23,7 +23,7 @@ def sum():
 # Display the sum
 #     print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 
-    return render_template("login.html")
+    return render_template("templates/login.html")
     
         
 if __name__ == "__main__":
