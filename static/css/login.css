@@ -1,0 +1,297 @@
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: auto;
+    padding-top: 20px;
+}
+
+.left {
+    left: 100px;
+    background: #f3f3f3;
+    background-image: linear-gradient(to bottom,#f3f3f3,#e2e2e2);
+    box-shadow: 4px -4px 10px rgba(0, 0, 0, 0.05);
+    
+}
+
+.right {
+    right: 0;
+    background-color: #f2f7f8;
+}
+.signIn-logo {
+    width: 10%;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+
+
+.card-no-border .card {
+    border: 0px;
+}
+.card {
+    margin-bottom: 30px;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+#overlay {
+    position: fixed;
+    width: 50%;
+    top: 23%;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+    background-color: #cc0000;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 15px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.button {
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.button a{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: #cc0000;
+    border:2px solid #fff;
+}
+.button:hover a{
+  color:#fff;
+}
+
+.info span{
+color: white;
+margin-left: 5%;
+font-size: 20px;
+
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px 50px 0px 50px;
+    height: 230px;
+}
+.modal-dialog {
+    width: 53%;
+}
+.modal-content{
+			background-color: #e9ecef;
+            border:none;
+            box-shadow: 0 1px 3px rgba(0,0,0,.5);
+		}
+.btn-link{
+			color:black;
+		}
+.btn-link:hover{
+			color:#cc0000;
+		}
+.btn-signup{
+			color:white;
+		}
+.btn-signup:hover{
+			color:gray;
+		}
+.modal-heading h2{
+			color:#cc0000;
+}
+
+.login{
+    background-color: #cc0000;
+    border: none;
+    color: white;
+    padding: 4% 40% 4% 40%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    cursor: pointer;
+    border-radius: 16px;
+}
+}
+.login a{
+    color: white !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.login:hover {
+    background-color: #cc0000;
+    border:2px solid #fff;
+}
+.login a:hover{
+  color:#fff;
+}
+
+.input-group-addon {
+    color: #cc0000;
+    
+}
+@media (min-width: 768px)
+ .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 4px;
+  left: 0;
+  right: 20px;
+  bottom: 12px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+    content: "";
+    height: 18px;
+    width: 17px;
+    left: -3px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #cc0000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #cc0000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.footer {
+  bottom: 0;
+  color: #cc0000;
+  font-size: 15px;
+  text-align: center;
+  left: 0px;
+  padding: 17px 15px;
+  position: absolute;
+  right: 0;
+  z-index:2;
+  /*border-top: 1px solid rgba(120, 130, 140, 0.13);*/
+  background: #f3f3f3; 
+  background-image: linear-gradient(to bottom,#f3f3f3,#e2e2e2);}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*[class*="col-"]{
+        width: 100%;
+        padding-right: 10%;
+    }*/
+    .left{
+        width: 100%;
+        padding-right: 10%;
+    }
+    .right{
+        width: 100%;
+        padding-right: 10%;
+    }
+    .modal-dialog {
+    width: 100%;
+}
+    .signIn-logo {
+    width: 20%;
+    }
+}
