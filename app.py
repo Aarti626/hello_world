@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import os
+from template import index
 # from heapq import nlargest
 # from heapq import nsmallest
 
@@ -12,7 +13,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
    print("Render")
-   return render_template("./templates/index.html")
+   return render_template("index.html")
 
 @app.route("/sum",methods=["GET"])
 def sum():
