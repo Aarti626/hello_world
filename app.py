@@ -5,8 +5,8 @@ import os
 
 # from heapq import nlargest
 # from heapq import nsmallest
-
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
+# app = Flask(__name__)
 # global identifier
 
 
