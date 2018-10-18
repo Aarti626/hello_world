@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import os
-from template import index
+
 # from heapq import nlargest
 # from heapq import nsmallest
 
