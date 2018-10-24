@@ -15,7 +15,7 @@ app = Flask(__name__, template_folder='templates')
 @app.route("/")
 def index():
    print("Render")
-   return render_template("index.html")
+   return "abc"
 
 @app.route("/sum",methods=["GET"])
 def sum():
